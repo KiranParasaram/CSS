@@ -1,0 +1,30 @@
+.box-container{
+    border:2px solid red;
+    width:85%;
+    height: 1200px;
+    margin-left: 70px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    overflow:scroll;
+    
+}
+
+.box{
+    border:2px solid black;
+    width:150px;
+    height:150px;
+    margin:20px;
+    border-radius: 50%;
+}
+.box1{
+    background-color: brown;
+}
+
+.box2{
+    background-color:aqua;
+}
+
+.box4{
+    background-color:green;
+}

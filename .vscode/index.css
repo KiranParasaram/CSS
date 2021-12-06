@@ -1,0 +1,47 @@
+h1{
+    color:red;
+    margin:100px;
+    text-align: center;
+    animation-name:text-animation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 10;
+
+}
+div{
+    border: 1px solid black;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    background-color:red;
+    animation-name:box-animate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 10;
+}
+@keyframes text-animation {
+    60%{
+        transform:scale(2,2);
+    }
+    /* 40%{
+        transform:rotate(180deg);
+    } */
+    /* 60%{
+        transform:rotate(30deg,30deg);
+    } */
+   
+    
+}
+@keyframes box-animate {
+    30%{
+        transform: translate(50px);
+    }
+    30%{
+        transform: translatexy(50px);
+    }
+    60%{
+        transform: translate(200px);
+    }
+    
+}
+

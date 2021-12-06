@@ -1,0 +1,34 @@
+h1{
+    color:blue;
+}
+
+@media screen and (min-width:300px) and (max-width:400px){
+    h1{
+        color:green;
+    }
+    
+}
+
+@media screen and (min-width:500px) and (max-width:700px){
+    h1{
+        color:red;
+    }
+    
+}
+
+.box{
+    border:1px solid black;
+    width:150px;
+    height:150px;
+    border-radius: 10px;
+     background-color: hotpink;
+     margin:20px;
+     display: inline-block;
+}
+
+@media screen and (min-width:500px) and  (max-width:700px) {
+
+    .box{
+       display:block;
+    }
+}
