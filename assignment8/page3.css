@@ -1,0 +1,110 @@
+.sky{
+    background-image: url(./sky.jpg);
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+    
+  
+}
+.head{
+    display:inline-block;
+}
+.happy{
+    background-color: orange;
+}
+.inde{
+    background-color:white;
+}
+.day{
+    background-color:rgb(34, 245, 7);   
+}
+.sun{
+    position: fixed;
+    right:200px;
+    top:150px;
+    background:none;
+}
+.city{
+    background-image: url(./city.png);
+    background-repeat: repeat-x;
+    margin-top: 200px;
+    width:300%;
+  
+
+   animation-name            : city;
+   animation-duration        : 5s;
+   animation-delay           : 4s;
+   animation-iteration-count : infinite;
+ 
+   animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-timing-function: linear;
+    
+}
+.road{
+    
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    animation-name:road;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+}
+.car{
+   position: absolute;
+    left:600px;
+    bottom:100px;
+   
+}
+.wheel1{
+    position: absolute;
+    bottom:105px;
+    left: 880px;
+    animation-name: wheel1;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition: transform 5s;
+    animation-timing-function: linear;
+  
+   
+}
+.wheel2{
+    position: absolute;
+    bottom:105px;
+    left:635px;
+    animation-name: wheel2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes city {
+    100%{
+        transform:translate(-1000px);
+    }
+    
+}
+ 
+@keyframes road {
+    100%{
+        transform: translate(-1000px);
+    }
+    
+}
+
+@keyframes wheel1  {
+    100%{
+        transform: rotate(500deg);
+       
+    }
+    
+}
+@keyframes wheel2 {
+    100%{
+        transform:rotate(500deg);
+       
+    }
+    } 
+    

@@ -1,0 +1,126 @@
+h1{
+    text-align: center;
+}
+.plane{
+    width:100px;
+    height:100px;
+    margin:20px;
+    display:inline-block;
+    
+}
+.plane1{
+
+       background-color: brown;
+       animation-name: plane1;
+       animation-duration: 5s;
+       animation-iteration-count: infinite;
+       animation-delay: 2s;
+}
+.plane2{
+
+       background-color: rgb(42, 165, 58);
+       animation-name: plane2;
+       animation-duration: 5s;
+       animation-iteration-count: infinite;
+   
+}
+.plane3{
+
+       background-color: rgb(85, 42, 165);
+       animation-name: rotate;
+       animation-duration: 4s;
+       animation-iteration-count: infinite;
+   
+}
+.plane4{
+    width:100px;
+    height:100px;
+    margin:20px;
+    display:inline-block;
+  
+    background-color: rgb(240, 13, 25);
+    animation-name: height;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition:height 2s;
+   
+}
+.plane5{
+    width:100px;
+    height:100px;
+    margin:20px;
+    display:inline-block;
+  
+    background-color: rgb(41, 17, 19);
+    animation-name:width;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    translate:wigth 2s;
+   
+}
+.plane6{
+    width:100px;
+    height:100px;
+    margin:20px;
+    display:inline-block;
+  
+    background-color: rgb(243, 119, 126);
+    animation-name: animate-rotate;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   
+}
+.ancher1{
+  
+   font-size: 30px;
+}
+
+
+
+@keyframes plane1 {
+    50%{
+        transform: skew(20deg);
+    }
+    40%{
+        transform: skew(-20deg); 
+    }
+    
+}
+@keyframes plane2 {
+    50%{
+        transform: skewy(20deg);
+    }
+    10%{
+        transform: skewY(-5deg);
+    }
+    40%{
+        transform: skewy(-20deg); 
+    }
+    
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+   
+    
+}
+@keyframes height {
+    100%{
+        height :50px;
+        transform: translatey(25px);
+    }
+    
+}
+@keyframes width{
+    100%{
+        width:50px;
+        transform:translate(-25px);
+    }
+}
+@keyframes animate-rotate {
+    100%{
+        transform: rotate(180deg);
+    }
+    
+}

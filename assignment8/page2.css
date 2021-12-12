@@ -1,0 +1,69 @@
+h1{
+    text-align: center;
+}
+
+.box{
+    width:100px;
+    height: 100px;
+    background-color: green;
+    margin:20px;
+   
+}
+.box1{
+    transition: width 2s;
+}
+.box1:hover{
+  width:300px;
+}
+.box2{
+    transition: width 2s, height 3s;
+    
+}
+.box2:hover{
+  width:300px;
+  height:300px;
+}
+
+.box3{
+    transition-timing-function: linear;
+    transition: width 2s;
+}
+.box3:hover{
+  width:300px;
+  
+}
+
+.box4{
+    transition-timing-function: ease 5s;
+    transition: width 2s;
+}
+.box4:hover{
+  width:300px;
+  
+}
+
+.box5{
+    transition-timing-function: ease-in 5s;
+    transition: width 2s;
+}
+.box5:hover{
+  width:300px;
+  
+}
+
+.box6{
+    transition-timing-function: ease-out 5s;
+    transition: width 2s;
+}
+.box6:hover{
+  width:300px;
+  
+}
+.box7{
+    transition-timing-function: ease-in-out 5s;
+    transition: width 2s;
+}
+.box7:hover{
+  width:300px;
+  
+}
